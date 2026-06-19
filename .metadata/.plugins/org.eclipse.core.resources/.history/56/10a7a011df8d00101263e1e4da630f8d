@@ -1,0 +1,22 @@
+package program;
+
+import java.util.Scanner;
+
+public class app {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("How many students for course A? ");
+		int n = sc.nextInt();
+		for(int i = 0; i<n; i++) {
+			
+		}
+
+		
+		
+		
+		sc.close();
+	}
+
+}

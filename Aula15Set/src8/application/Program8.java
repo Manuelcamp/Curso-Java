@@ -1,0 +1,20 @@
+package application;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import entities.Product8;
+
+public class Program8 {
+	public static void main(String[] args) {
+		Set<Product8> set = new HashSet<>();
+		
+		set.add(new Product8("TV", 900.0));
+		set.add(new Product8("Notebook", 1200.0));
+		set.add(new Product8("Tablet", 400.0));
+		
+		
+		Product8 prod = new Product8("Notebook", 1200.0);
+		System.out.println(set.contains(prod));
+	}
+}

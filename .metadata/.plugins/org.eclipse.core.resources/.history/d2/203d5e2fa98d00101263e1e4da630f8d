@@ -1,0 +1,8 @@
+package entidades;
+
+import entidade.nums.Color;
+
+public interface class Shape {
+	
+	double area();
+}

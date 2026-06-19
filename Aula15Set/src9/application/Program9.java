@@ -1,0 +1,23 @@
+package application;
+
+import java.util.Set;
+import java.util.TreeSet;
+
+import entities.Product9;
+
+public class Program9 {
+
+	public static void main(String[] args) {
+
+		Set<Product9> set = new TreeSet<>();
+
+		set.add(new Product9("TV", 900.0));
+		set.add(new Product9("Notebook", 1200.0));
+		set.add(new Product9("Tablet", 400.0));
+
+		for (Product9 p : set) {
+			System.out.println(p);
+		}
+
+	}
+}

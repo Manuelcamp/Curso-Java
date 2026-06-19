@@ -1,0 +1,38 @@
+package model.services;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.List;
+
+import model.entities.Contract;
+import model.entities.Installment;
+
+public class ContractService {
+	private PaypalService paymentService;
+	DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+	List<Installment> installmentList = new ArrayList<>();
+
+	public OnlinePaymentService getPaymentService() {
+		return paymentService;
+	}
+
+	public void setPaymentService(PaypalService paymentService) {
+		this.paymentService = paymentService;
+	}
+
+	public ContractService(PaypalService paymentService) {
+		this.paymentService = paymentService;
+	}
+
+	public void processContract(Contract contract, Integer months) {
+		for(int i = 1; i <= months; i++) {
+			
+			Double mothValuePay = paymentService.paymentFee(paymentService.interest(contract.getTotalValue(), months));
+			LocalDateTime dateContractPay = contract.getDate().plusMonths(i);
+			
+			Installment installment = new Installment(dateContractPay, );
+			installmentList.add(installment);
+		}		
+	}
+}

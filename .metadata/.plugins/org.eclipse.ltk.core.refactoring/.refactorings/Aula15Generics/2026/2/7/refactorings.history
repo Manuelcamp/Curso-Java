@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 4 source folders to &apos;Aula15HashCodeEquals&apos;&#x0D;&#x0A;- Original project: &apos;Aula15Generics&apos;&#x0D;&#x0A;- Destination element: &apos;Aula15HashCodeEquals&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Aula15Generics/src8&#x0D;&#x0A;     Aula15Generics/src9&#x0D;&#x0A;     Aula15Generics/src5&#x0D;&#x0A;     Aula15Generics/src6&#x0D;&#x0A;- Update references to refactored element" description="Move source folders" destination="=Aula15HashCodeEquals" element1="/src8" element2="/src9" element3="/src5" element4="/src6" flags="6" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveRoots" roots="4" stamp="1770685862455" version="1.0"/>
+</session>
